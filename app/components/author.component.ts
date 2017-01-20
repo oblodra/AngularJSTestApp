@@ -25,7 +25,6 @@ export class AuthorComponent {
   constructor(authorService: AuthorService) {
     this.authors = authorService.getAuthors();
     
-    console.log('constructor ran!');
     this.name = 'Authors'
 
   }

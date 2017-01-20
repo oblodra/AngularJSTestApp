@@ -25,7 +25,6 @@ export class CourseComponent {
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();
     
-    console.log('constructor ran!');
     this.name = 'Courses'
 
   }
