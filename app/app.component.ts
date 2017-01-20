@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
             <div>
               <h1>My First Angular App</h1>
   
-              <user></user>
+              <course></course>
+
+              <author></author>
             </div>  
             `
 })

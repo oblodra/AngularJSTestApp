@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CourseService } from '../services/course.service'
 
 @Component({
   selector: 'user',
@@ -7,40 +8,25 @@ import { Component } from '@angular/core';
           </div>
           <hr>
           <div>
-              <p><strong>Email:</strong> {{email}}</p>
-              <p><strong>Address:</strong>{{address.street}} {{address.city}}, {{address.state}}</p>
-              <ng-content select=".component-content"></ng-content>
-          </div>
-          <hr>
-          <div>
               <ul>
                 <li *ngFor="let course of courses">
                 {{ course }}
               </ul>
-          </div>`,          
+          </div>`,
 })
 
-export class UserComponent { 
+export class UserComponent {
   name: string;
-  email: string;
-  address: address;
 
-  courses = ["course1", "course2", "course3"];
 
-  constructor() {
-      console.log('constructor ran!');
-      this.name = 'Angular'
-      this.email = 'john@email.com'
-      this.address = {
-          street: '12 Main st',
-          city: 'Detroit',
-          state: 'Fl'
-      }
+  courses;
+
+  constructor(courseService: CourseService) {
+    this.courses = courseService.getCourses();
+    
+    console.log('constructor ran!');
+    this.name = 'Angular'
+
   }
 }
 
-interface address {
-  street: string;
-  city: string;
-  state: string;
-}
