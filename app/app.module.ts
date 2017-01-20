@@ -9,6 +9,7 @@ import { CourseComponent }   from './components/course.component';
 import { AuthorComponent }   from './components/author.component';
 import { StarComponent }   from './components/star.component';
 import { AboutComponent }   from './components/about.component';
+import { ExampleComponent }   from './components/example.component';
 
 import { routing } from './app.routing';
 
@@ -19,7 +20,8 @@ import { PostsService}     from './services/posts.service';
 import { AutoGrowDirective} from './directives/auto-grow.directive';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, routing ],
-  declarations: [ AppComponent, UserComponent, CourseComponent, AuthorComponent, AutoGrowDirective, StarComponent, AboutComponent ],
+  declarations: [ AppComponent, UserComponent, CourseComponent, AuthorComponent, 
+                  ExampleComponent, AutoGrowDirective, StarComponent, AboutComponent ],
   providers:    [ CourseService, AuthorService, PostsService],
   bootstrap:    [ AppComponent ]
 })
