@@ -11,7 +11,6 @@ export class AutoGrowDirective {
 
     constructor(private el: ElementRef,private  render: Renderer) {
 
-
     }
 
     onFocus() {
