@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TweetService} from '../services/tweet.service'
+import { TweetService} from './tweet.service'
 
 @Component({
     selector: 'tweetList',

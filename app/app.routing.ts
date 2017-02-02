@@ -5,7 +5,7 @@ import { UserComponent} from './components/user.component';
 import { AboutComponent} from './components/about.component';
 import { ExampleComponent } from './components/example.component';
 import { ShowItemsComponent } from './components/showitems.component';
-import { TwitterComponent } from './components/twitter.component';
+import { TwitterComponent } from './components/twitter/twitter.component';
 import { GitHubProfileComponent } from './components/github/github-profile.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SubscriptionFormComponent } from './components/subscription-form/subscription-form.component';
