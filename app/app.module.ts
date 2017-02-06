@@ -19,6 +19,8 @@ import { TwitterComponent } from './components/twitter/twitter.component';
 import { GitHubProfileComponent } from './components/github/github-profile.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SubscriptionFormComponent } from './components/subscription-form/subscription-form.component';
+import { InputExampleComponent } from './components/inputExample.component';
+import { SingleFormComponent } from './components/singleform.component';
 
 import { routing } from './app.routing';
 
@@ -30,14 +32,13 @@ import { GitHubService } from './components/github/github.service';
 
 import { AutoGrowDirective } from './directives/auto-grow.directive';
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule,
-            HttpModule, routing],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, routing],
   declarations: [AppComponent, UserComponent, CourseComponent, AuthorComponent,
     ExampleComponent, AutoGrowDirective, StarComponent,
     AboutComponent, ShowItemsComponent, VoteComponent,
     LikesComponent, TweetComponent, TweetsComponent,
     TwitterComponent, GitHubProfileComponent, ContactFormComponent,
-    SubscriptionFormComponent],
+    SubscriptionFormComponent, InputExampleComponent, SingleFormComponent ],
   providers: [CourseService, AuthorService, PostsService,
     TweetService, GitHubService],
   bootstrap: [AppComponent]
